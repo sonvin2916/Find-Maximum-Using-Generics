@@ -22,5 +22,4 @@ public class FindMaximumTest {
         int result = findMaximum.testMax(50,20,80);
         Assert.assertEquals(80,result);
     }
-
 }
