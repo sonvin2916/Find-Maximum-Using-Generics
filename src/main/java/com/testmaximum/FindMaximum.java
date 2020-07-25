@@ -10,6 +10,4 @@ public class FindMaximum {
             max=c;
         return max;
     }
-
-
 }
