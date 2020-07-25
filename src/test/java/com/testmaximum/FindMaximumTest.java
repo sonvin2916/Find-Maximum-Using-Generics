@@ -7,6 +7,7 @@ public class FindMaximumTest {
     @Test
     public void givenIntegerMaxNumber_AtFirstPosition_ShouldReturnSameNumber(){
         FindMaximum findMaximum = new FindMaximum();
+
         int result = findMaximum.testMax(80,20,50);
         Assert.assertEquals(80,result);
     }
