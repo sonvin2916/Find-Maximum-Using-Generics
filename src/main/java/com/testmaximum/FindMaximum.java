@@ -2,18 +2,18 @@ package com.testmaximum;
 
 public class FindMaximum <E extends Comparable<E>>
 {
-    E myXArray, myYArray, myZArray;
+    E firstDigit, secondDigit, thirdDigit;
 
-    public FindMaximum(E myXArray, E myYArray, E myZArray)
+    public FindMaximum(E firstDigit, E secondDigit, E thirdDigit)
     {
-        this.myXArray = myXArray;
-        this.myYArray = myYArray;
-        this.myZArray = myZArray;
+        this.firstDigit=firstDigit;
+        this.secondDigit=secondDigit;
+        this.thirdDigit=thirdDigit;
     }
 
     public E testMax()
     {
-        return testMax(myXArray, myYArray, myZArray);
+        return testMax(firstDigit,secondDigit,thirdDigit);
     }
 
     public static <E extends Comparable<E>> E testMax(E firstNumber, E secondNumber, E thirdNumber)
