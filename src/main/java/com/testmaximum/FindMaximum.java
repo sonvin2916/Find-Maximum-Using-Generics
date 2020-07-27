@@ -25,8 +25,11 @@ public class FindMaximum <E extends Comparable<E>>
         if (thirdNumber.compareTo(max) > 0) {
             max = thirdNumber;
         }
+        printMax(firstNumber,secondNumber,thirdNumber,max);
         return max;
-
+    }
+    private static <E extends Comparable<E>> void printMax(E firstNumber, E secondNumber, E thirdNumber, E max) {
+        System.out.println("Maximum of"+firstNumber+" "+secondNumber+" "+thirdNumber+":"+max);
     }
 
     public static void main(String args[])
@@ -35,9 +38,9 @@ public class FindMaximum <E extends Comparable<E>>
         Integer firstInt = 50, secondInt = 80, thirdInt = 20;
         Float firstFloat = 56.12f, secondFloat = 30.16f, thirdFloat = 28.14f;
         String firstString = "Banana", secondString = "Orange", thirdString = "Mango";
-        new FindMaximum<Integer>(firstInt, secondInt, thirdInt);
-        new FindMaximum<Float>(firstFloat, secondFloat, thirdFloat);
-        new FindMaximum<String>(firstString, secondString, thirdString);
+        new FindMaximum<Integer>(firstInt, secondInt, thirdInt).testMax();
+        new FindMaximum<Float>(firstFloat, secondFloat, thirdFloat).testMax();
+        new FindMaximum<String>(firstString, secondString, thirdString).testMax();
     }
 }
 
